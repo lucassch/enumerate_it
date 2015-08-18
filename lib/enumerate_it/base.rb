@@ -19,7 +19,7 @@ module EnumerateIt
     end
 
     def self.list
-      enumeration.values.map { |value| value[0] }.sort
+      sorted_map.map { |v| v[0].to_s }
     end
 
     def self.enumeration
